@@ -25,24 +25,23 @@ public class PetStoreContoller {
         return petStoreService.getPet(id);
     }
 
-    //post data
+    //POST data
     @RequestMapping(method = RequestMethod.POST, value = "/pet-store")
     public void addPet(@RequestBody PetStoreModel pet){
         PetStoreService.addPet(pet);
     }
 
-    //put data
+    //PUT data
     @RequestMapping(method = RequestMethod.PUT, value = "/pet-store/{id}")
     public void updatePet(@RequestBody PetStoreModel pet, @PathVariable("id") String id){
         PetStoreService.updatePet(pet, id);
     }
 
-    //delete data
+    //DEL data
     @RequestMapping(method = RequestMethod.DELETE, value = "/pet-store/{id}")
     public void deletePet(@PathVariable("id") String id){
         PetStoreService.deletePet(id);
     }
-
 }
 
 

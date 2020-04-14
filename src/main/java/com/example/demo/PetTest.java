@@ -6,7 +6,7 @@ public class PetTest {
         PetStoreModel petModel = new PetStoreModel("01","Latte",2,"Masculine","Scottish Fold");
         System.out.println(petModel.toString());
 
-        //getter -> get result | setter -> set value
+        //getter -> get result | setter -> set value.
         PetStoreModel petModel2 = new PetStoreModel();
         petModel2.setId("01");
         petModel2.setPetName("Latte");
